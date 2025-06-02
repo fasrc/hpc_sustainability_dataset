@@ -4,15 +4,21 @@ IPMI, DCGM, Slurm, and other logs for researchers to use in their HPC Sustainabi
 Questions should be directed to Jason Wells: jrwells at fas.harvard.edu.
 
 Service Notes:
-- May 31, 2025: Our primary data center, which houses the three clusters, has a yearly outage every year for a few days. We make this into four days so we can do some updates without having to arrange further downtime with our researchers. Importantly, the monitoring server is not in this data center. I may not have the GPU monitoring in place for this event, but IPMI and slurmctld logs should be available. You will be able to see the power down of the clusters on May 31 and June 1 of 2025, and the powerup of the clusters on June 7/8, 2025.
+- May 31, 2025: Our primary data center, which houses the three clusters, has a yearly outage every year for a few days. We make this into four days so we can do some updates without having to arrange further downtime with our researchers. Importantly, the monitoring server is not in this data center. I may not have the GPU monitoring in place for this event, but IPMI and slurmctld logs should be available. You will be able to see the power down of the clusters on May 31 and June 1 of 2025, and the powerup of the clusters on June 5/6, 2025.
 
 General Notes:
 - I was forced to use xz compression. I was really fighting github's file size limitation and had to upgrade to something better than gzip.
 - 'xz -T0 -9' reduced the compressed file size 75% and sped it up greatly, FYI.
 - 'tar xf <filename>' should handle the decompression the same way. Be prepared to wait (have lunch, etc.).
 
+DCGM Nodes
+- Researchers should consider June 6th as the first full day of DCGM data. Previous days were setup and maintenance days.
+
 IPMI Notes:
 - Researchers should consider May 31st as the first full day of IPMI data. Previous days were setup days.
+
+June 2, 2025
+- DCGM logs are ready to go but make little sense since everything is powered down. Those logs should start to make sense on the 5th.
 
 May 31, 2025
 - Upgraded to xz compression. See note.
