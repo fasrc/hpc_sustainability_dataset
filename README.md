@@ -11,7 +11,10 @@ General Notes:
 - 'xz -T0 -9' reduced the compressed file size 75% and sped it up greatly, FYI.
 - 'tar xf <filename>' should handle the decompression the same way. Be prepared to wait (have lunch, etc.).
 
-DCGM Nodes
+Weather Notes:
+- We're scraping data every 5 minutes from KMAHIGHL4 on Wunderground, which is 1.5 miles from MGHPCC. You can see the data <a href="https://www.wunderground.com/dashboard/pws/KMAHIGHL4">here</a>.
+
+DCGM Notes
 - Researchers should consider June 6th as the first full day of DCGM data. Previous days were setup and maintenance days.
 
 IPMI Notes:
